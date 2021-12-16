@@ -1,77 +1,15 @@
 """
-cab website software
+cab booking software
 
-you input your departure and arrival location, date
+you input your departure and arrival location
 
-then show distance when user inputs locations
+it shows distance when user inputs locations
 
-show price based on current petrol price 
+then input date and time
 
-coupon, special requests
+it 'll show price based on the petrol price, distance and your choice of vehicle 
 
-while True:
-    try:
-        print("\nDo you wish to travel in AC or non-AC vehicle?\n1 - AC || 2 - non-AC")
-        type= input("")
-        if type=='1':
-            print('\nYou chose AC cab')   #input yahan
-            print('')
-            print("The cab will cost you- (in INR)")
-            if dep_in.lower()=='dwarka' and arv_in.lower()=='vasant kunj' or dep_in.lower()=='vasant kunj' and arv_in.lower()=='dwarka':
-                z=print(prl*d2+(prl*d2)*20/100+(prl*d2+(prl*d2)*20/100)*5/100+100)
-            elif dep_in.lower()=='hauz khas' and arv_in.lower()=='vasant kunj' or dep_in.lower()=='vasant kunj' and arv_in.lower()=='hauz khas':
-                z=print(prl*d1+(prl*d1)*20/100+(prl*d1+(prl*d1)*20/100)*5/100+100)
-            elif dep_in.lower()=='connaught place' and arv_in.lower()=='vasant kunj' or dep_in.lower()=='vasant kunj' and arv_in.lower()=='connaught place':
-                z=print(prl*d3+(prl*d3)*20/100+(prl*d3+(prl*d3)*20/100)*5/100+100)
-            elif dep_in.lower()=='janakpuri' and arv_in.lower()=='vasant kunj' or dep_in.lower()=='vasant kunj' and arv_in.lower()=='janakpuri':
-                z=print(prl*d4+(prl*d4)*20/100+(prl*d4+(prl*d4)*20/100)*5/100+100)
-
-            elif dep_in.lower()=='hauz khas' and arv_in.lower()=='dwarka' or dep_in.lower()=='dwarka' and arv_in.lower()=='hauz khas':
-                z=print(prl*da1+(prl*da1)*20/100+(prl*da1+(prl*da1)*20/100)*5/100+100)
-            elif dep_in.lower()=='hauz khas' and arv_in.lower()=='connaught place' or dep_in.lower()=='connaught place' and arv_in.lower()=='hauz khas':
-                z=print(prl*da2+(prl*da2)*20/100+(prl*da2+(prl*da2)*20/100)*5/100+100)
-            elif dep_in.lower()=='hauz khas' and arv_in.lower()=='janakpuri' or dep_in.lower()=='janakpuri' and arv_in.lower()=='hauz khas':
-                z=print(prl*da3+(prl*da3)*20/100+(prl*da3+(prl*da3)*20/100)*5/100+100)
-
-            elif dep_in.lower()=='dwarka' and arv_in.lower()=='janakpuri' or dep_in.lower()=='janakpuri' and arv_in.lower()=='dwarka':
-                z=print(prl*db2+(prl*db2)*20/100+(prl*db2+(prl*db2)*20/100)*5/100+100)
-            elif dep_in.lower()=='dwarka' and arv_in.lower()=='connaught place' or dep_in.lower()=='connaught place' and arv_in.lower()=='dwarka':
-                z=print(prl*db1+(prl*db1)*20/100+(prl*db1+(prl*db1)*20/100)*5/100+100)
-
-            elif dep_in.lower()=='connaught place' and arv_in.lower()=='janakpuri' or dep_in.lower()=='janakpuri' and arv_in.lower()=='connaught place':
-                z=print(prl*dc1+(prl*dc1)*20/100+(prl*dc1+(prl*dc1)*20/100)*5/100+100)
-            break
-    
-        elif type=='2':
-            print('You chose non-AC cab')   #input yahan
-            if dep_in.lower()=='dwarka' and arv_in.lower()=='vasant kunj' or dep_in.lower()=='vasant kunj' and arv_in.lower()=='dwarka':
-                z=print(prl*d2+(prl*d2)*20/100+(prl*d2+(prl*d2)*20/100)*5/100)
-            elif dep_in.lower()=='hauz khas' and arv_in.lower()=='vasant kunj' or dep_in.lower()=='vasant kunj' and arv_in.lower()=='hauz khas':
-                z=print(prl*d1+(prl*d1)*20/100+(prl*d1+(prl*d1)*20/100)*5/100)
-            elif dep_in.lower()=='connaught place' and arv_in.lower()=='vasant kunj' or dep_in.lower()=='vasant kunj' and arv_in.lower()=='connaught place':
-                z=print(prl*d3+(prl*d3)*20/100+(prl*d3+(prl*d3)*20/100)*5/100)
-            elif dep_in.lower()=='janakpuri' and arv_in.lower()=='vasant kunj' or dep_in.lower()=='vasant kunj' and arv_in.lower()=='janakpuri':
-                z=print(prl*d4+(prl*d4)*20/100+(prl*d4+(prl*d4)*20/100)*5/100)
-
-            elif dep_in.lower()=='hauz khas' and arv_in.lower()=='dwarka' or dep_in.lower()=='dwarka' and arv_in.lower()=='hauz khas':
-                z=print(prl*da1+(prl*da1)*20/100+(prl*da1+(prl*da1)*20/100)*5/100)
-            elif dep_in.lower()=='hauz khas' and arv_in.lower()=='connaught place' or dep_in.lower()=='connaught place' and arv_in.lower()=='hauz khas':
-                z=print(prl*da2+(prl*da2)*20/100+(prl*da2+(prl*da2)*20/100)*5/100)
-            elif dep_in.lower()=='hauz khas' and arv_in.lower()=='janakpuri' or dep_in.lower()=='janakpuri' and arv_in.lower()=='hauz khas':
-                z=print(prl*da3+(prl*da3)*20/100+(prl*da3+(prl*da3)*20/100)*5/100)
-
-            elif dep_in.lower()=='dwarka' and arv_in.lower()=='janakpuri' or dep_in.lower()=='janakpuri' and arv_in.lower()=='dwarka':
-                z=print(prl*db2+(prl*db2)*20/100+(prl*db2+(prl*db2)*20/100)*5/100)
-            elif dep_in.lower()=='dwarka' and arv_in.lower()=='connaught place' or dep_in.lower()=='connaught place' and arv_in.lower()=='dwarka':
-                z=print(prl*db1+(prl*db1)*20/100+(prl*db1+(prl*db1)*20/100)*5/100)
-
-            elif dep_in.lower()=='connaught place' and arv_in.lower()=='janakpuri' or dep_in.lower()=='janakpuri' and arv_in.lower()=='connaught place':
-                z=print(prl*dc1+(prl*dc1)*20/100+(prl*dc1+(prl*dc1)*20/100)*5/100)
-            break
-        else:
-            print("\nPlease choose 1 or 2")
-    except ValueError:
-        continue
+also enter coupon: thankyouatharv     
 """
 
 import fontstyle
